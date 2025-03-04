@@ -1,0 +1,273 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  background-color: #086bff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://aksaramaya.com/wp-content/uploads/2023/07/Perpustakaan-Ikonik-dalam-Drama-Korea-930x620.jpg);
+  background-size: cover;
+  padding: 10px;
+
+  /* Pengaturan Font */
+  color: #ffffff;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: bold;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 5px;
+}
+
+header p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header img {
+  width: 150px;
+  max-width: 300px;
+  height: auto;
+  margin-right: 1rem;
+  transition: transform 0.2s;
+}
+
+nav {
+  background-color: #0446d5;
+  padding: 1rem 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  justify-content: center;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-family: "Quicksand", sans-serif;
+  transition: font-weight 0.3s ease;
+  transition: text-shadow 0.3s;
+  font-weight: 500;
+}
+
+nav a:hover {
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header img:hover {
+  transform: scale(1.1);
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+section {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan yang lebih kuat */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transisi transformasi dan bayangan */
+}
+
+section:hover {
+  transform: translateY(-5px); /* Efek hover mengangkat section */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Bayangan lebih kuat saat hover */
+}
+
+h2 {
+  margin-top: 0;
+  color: #007bff;
+  transition: color 0.3s ease; /* Transisi warna judul */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 1.2rem);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transisi border dan bayangan */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efek fokus */
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi warna dan transformasi */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Efek hover mengangkat tombol */
+}
+
+#incompleteBookList,
+#completeBookList {
+  margin-top: 1rem;
+}
+
+[data-testid="bookItem"] {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transisi transformasi dan bayangan */
+}
+
+[data-testid="bookItem"]:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+
+[data-testid="bookItem"] h3 {
+  margin-top: 0;
+  transition: color 0.3s ease; 
+}
+
+[data-testid="bookItem"] p {
+  margin: 0.25rem 0;
+}
+
+[data-testid="bookItem"] button {
+  margin-right: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease; /
+}
+
+[data-testid="bookItem"] button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); 
+}
+
+
+/* PERFOTTERAN */
+footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff; 
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #007bff; 
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Animasi saat buku ditambahkan */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-testid="bookItem"].new-book {
+  animation: fadeIn 0.5s ease-out; /* Animasi fade-in */
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  main {
+    width: 95%;
+  }
+}
