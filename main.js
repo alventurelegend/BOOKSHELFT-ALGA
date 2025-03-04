@@ -16,22 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (data) {
         books = JSON.parse(data);
       } else {
-        books = [
-          {
-            id: 123123123,
-            title: "Judul Buku 1",
-            author: "Penulis Buku 1",
-            year: 2030,
-            isComplete: false,
-          },
-          {
-            id: 456456456,
-            title: "Judul Buku 2",
-            author: "Penulis Buku 2",
-            year: 2030,
-            isComplete: true,
-          },
-        ];
+        books = [];
         saveData();
       }
     }
